@@ -1,0 +1,1 @@
+New-SPServiceApplicationPool -Name "SharePoint Web Services Default" -Account (Get-SPManagedAccount "LAB\s-svc") 

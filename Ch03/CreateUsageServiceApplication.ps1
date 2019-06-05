@@ -1,0 +1,1 @@
+New-SPUsageApplication -Name "Usage and Health Data Collection Service Application" -DatabaseServer CALSQL01 -DatabaseName Usage

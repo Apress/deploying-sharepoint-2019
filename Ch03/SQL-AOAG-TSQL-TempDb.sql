@@ -1,0 +1,11 @@
+CREATE DATABASE [aoagoseed]
+ CONTAINMENT = NONE
+ ON  PRIMARY 
+( NAME = N'aoagoseed1', FILENAME = N'M:\Data\aoagoseed.mdf' , SIZE = 8192KB , FILEGROWTH = 65536KB )
+ LOG ON 
+( NAME = N'aoagoseed1_log', FILENAME = N'L:\Logs\aoagoseed_log.ldf' , SIZE = 8192KB , FILEGROWTH = 65536KB )
+ALTER DATABASE [aoagoseed] SET COMPATIBILITY_LEVEL = 140
+ALTER DATABASE [aoagoseed] SET RECOVERY FULL
+GO
+USE [aoagoseed]
+IF NOT EXISTS (SELECT name FROM sys.filegroups WHERE is_default=1 AND name = N'PRIMARY') ALTER DATABASE [aoagoseed] MODIFY FILEGROUP [PRIMARY] DEFAULT

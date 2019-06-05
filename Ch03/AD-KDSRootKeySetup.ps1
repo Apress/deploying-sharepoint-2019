@@ -1,0 +1,1 @@
+Add-KdsRootKey –EffectiveTime ((Get-Date).AddHours(-10))
