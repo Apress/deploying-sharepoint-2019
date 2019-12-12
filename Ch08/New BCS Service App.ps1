@@ -1,0 +1,1 @@
+﻿New-SPBusinessDataCatalogServiceApplication -Name "BCS" -DatabaseName "BCS" -ApplicationPool "SharePoint Web Services Default"

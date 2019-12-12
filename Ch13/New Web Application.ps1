@@ -1,0 +1,2 @@
+﻿$ap = New-SPAuthenticationProvider
+New-SPWebApplication -Name "Cobalt Atom Intranet" -HostHeader "intranet.cobaltatom.com" -URL "https://intranet.cobaltatom.com" -Port 443 -ApplicationPool "SharePoint"  -AuthenticationProvider $ap  -DatabaseName "WSS_Content_Intranet" -SecureSocketsLayer

@@ -1,0 +1,2 @@
+﻿$sa = New-SPPowerPointConversionServiceApplication -Name "PowerPoint Conversion Service" -ApplicationPool "SharePoint Web Services Default"
+New-SPPowerPointConversionServiceApplicationProxy "PowerPoint Conversion Service Proxy" -ServiceApplication $sa –AddToDefaultGroup

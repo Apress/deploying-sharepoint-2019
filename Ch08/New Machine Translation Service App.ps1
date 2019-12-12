@@ -1,0 +1,1 @@
+﻿New-SPTranslationServiceApplication -Name "Machine Translation" -DatabaseName "MachineTranslation" -ApplicationPool "SharePoint Web Services Default" -Default

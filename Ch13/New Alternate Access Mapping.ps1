@@ -1,0 +1,1 @@
+﻿New-SPAlternateURL -Url https://intranet -Zone "Default" -WebApplication https://intranet.cobaltatom.com -Internal

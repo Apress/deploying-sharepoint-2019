@@ -1,0 +1,1 @@
+﻿.\Set-SiteMailboxConfig.ps1 -ExchangeSiteMailboxDomain cobaltatom.com 

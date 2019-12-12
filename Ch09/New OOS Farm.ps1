@@ -1,0 +1,1 @@
+﻿New-OfficeWebAppsFarm -InternalUrl "https://office.cobaltatom.com" -ExternalUrl "https://office.cobaltatom.com" -CertificateName "OOSCert" –EditingEnabled

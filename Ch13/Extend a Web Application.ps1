@@ -1,0 +1,1 @@
+﻿Get-SPWebApplication https://intranet.cobaltatom.com |  New-SPWebApplicationExtension -Name "Extranet" -URL "https://extranet.cobaltatom.com"  -SecureSocketsLayer -Zone "Extranet" -HostHeader "extranet.cobaltatom.com" -Port 443
