@@ -10,7 +10,7 @@ New-SPEnterpriseSearchCrawlComponent -SearchTopology $clone -SearchServiceInstan
 New-SPEnterpriseSearchIndexComponent -SearchTopology $clone -SearchServiceInstance $si -IndexPartition 0 -RootDirectory F:\SearchIndex\0 
 New-SPEnterpriseSearchQueryProcessingComponent -SearchTopology $clone -SearchServiceInstance $si 
 
-$si2 = Get-SPEnterpriseSearchServiceInstance | ?{$_.Server -match "CALSP02"} 
+$si2 = Get-SPEnterpriseSearchServiceInstance | ?{$_.Server -match "CASP04"} 
 New-SPEnterpriseSearchAdminComponent -SearchTopology $clone -SearchServiceInstance $si2 
 New-SPEnterpriseSearchAnalyticsProcessingComponent -SearchTopology $clone -SearchServiceInstance $si2 
 New-SPEnterpriseSearchContentProcessingComponent -SearchTopology $clone -SearchServiceInstance $si2 
@@ -25,7 +25,7 @@ $sa = Get-SPEnterpriseSearchServiceApplication
 $active = Get-SPEnterpriseSearchTopology -SearchApplication $sa -Active 
 $clone = New-SPEnterpriseSearchTopology -SearchApplication $sa -Clone -SearchTopology $active 
 New-SPEnterpriseSearchIndexComponent -SearchTopology $clone -SearchServiceInstance $si -IndexPartition 1 -RootDirectory F:\SearchIndex\1 
-$si2 = Get-SPEnterpriseSearchServiceInstance | ?{$_.Server -match "CALSP02"} 
+$si2 = Get-SPEnterpriseSearchServiceInstance | ?{$_.Server -match "CASP04"} 
 New-SPEnterpriseSearchIndexComponent -SearchTopology $clone -SearchServiceInstance $si2 -IndexPartition 1 -RootDirectory F:\SearchIndex\1 
 $clone.Activate() 
 
